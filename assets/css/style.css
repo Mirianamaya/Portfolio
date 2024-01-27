@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+/* Variables y fuentes */
+@font-face{
+    font-family: "fuente1";
+    src: url("../fonts/Permanent_Marker/PermanentMarker-Regular.ttf");
+}
+@font-face{
+    font-family: "fuente2";
+    src: url("../fonts/Kalam/Kalam-Regular.ttf");
+}
+@font-face{
+    font-family: "fuente3";
+    src: url("../fonts/Kaushan_Script/KaushanScript-Regular.ttf");
+}
+
+/* Estilos web */
+:root{
+  --color0: White;
+  --color1: black;
+  --color2: Grey;
+  --color3: aqua;
+  --fuente1: "fuente1";
+  --fuente2: "fuente2";
+  --fuente3: "fuente3";
+
+  font-family: var(--fuente2);
+}
+h1{
+    color: var(--color0);
+    font-size: 3rem;
+    font-family: var(--fuente2);
+
+}
+h2{
+    color: var(--color2);
+    font-size: 1.8rem;
+    font-family: var(--fuente2);
+    font-weight: 100;  
+}h3{
+    width:100%;
+    text-align: left;
+    color: var(--color1);
+    font-size: 2rem;
+    font-family: var(--fuente2);
+    font-weight: 100;
+}
+h4{
+    font-size: 1.2rem;   
+    font-family: var(--fuente3);
+    color: var(--color2);
+    font-weight: 100;
+    letter-spacing: 3px;
+}
+p{
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+    line-height: 1.6rem;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+/* Cajas Principales */
+
+nav,header,main,footer{
+    width: 100%; 
+    max-width: 2560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+ }
+ header{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../img/fondoverde1.jpg");
+    opacity: .7;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    align-items: center;
+ }
+ #contenedor_titulo{
+    margin-top: 2rem;
+    width: 90%;
+    padding: 3rem;
+    text-align: center;
+    background-color: var(--color1);
+    border-style:solid;
+    border-radius: 30px;    
+    border-color: var(--color0);
+    opacity: .6;
+
+ }
+ #contenedor_proyectos{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 3rem;
+
+ }
+ header .proyecto{
+    background-color:var(--color1);
+    align-items: center;
+    text-align: center;
+    border-style:solid;
+    border-radius: 3px;    
+    border-color: var(--color0);
+
+ }
+ header .proyecto .foto img:hover{
+    filter: saturate(0);
+    border-style: solid;
+    border-color: var(--color0);
+    transform:scale(0.9);
+    }
+    
+ }
