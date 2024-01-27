@@ -108,7 +108,7 @@ nav,header,main,footer{
 
  }
  header .proyecto{
-    background-color:var(--color1);
+    background-color:var(--color0);
     align-items: center;
     text-align: center;
     border-style:solid;
@@ -122,5 +122,8 @@ nav,header,main,footer{
     border-color: var(--color0);
     transform:scale(0.9);
     }
+    #contenedor_copyright{
+        margin-top: 6rem;
+    }
     
- }
+ 
