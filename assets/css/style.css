@@ -123,11 +123,11 @@ nav,header,main,footer{
     filter: saturate(0);
     border-style: solid;
     border-color: var(--color0);
-    transform:scale(0.9);
+    transform:scale(0.95);
     transition: 1s;
     }
-    #contenedor_copyright{
-        margin-top: 6rem;
-    }
+#contenedor_copyright{
+    margin-top: 6rem;
+}
     
  
