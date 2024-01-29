@@ -20,10 +20,10 @@
 
 /* Estilos web */
 :root{
-  --color0: White;
+  --color0: white;
   --color1: black;
-  --color2: Grey;
-  --color3: aqua;
+  --color2: rgb(69, 79, 52);
+  --color3: rgb(205, 201, 172);
   --fuente1: "fuente1";
   --fuente2: "fuente2";
   --fuente3: "fuente3";
@@ -66,7 +66,14 @@ a{
     color: inherit;
 }
 /* Cajas Principales */
-
+body{
+    height: 100vh;
+    width: 100vw;
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 nav,header,main,footer{
     width: 100%; 
@@ -77,19 +84,13 @@ nav,header,main,footer{
     align-items: flex-start;
  }
  header{
-    height: 100vh;
-    width: 100vw;
-    background-image: url("../img/fondoverde1.jpg");
-    opacity: .7;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    
     align-items: center;
  }
  #contenedor_titulo{
     margin-top: 2rem;
     width: 90%;
-    padding: 3rem;
+    padding: 1rem;
     text-align: center;
     background-color: var(--color1);
     border-style:solid;
@@ -102,13 +103,15 @@ nav,header,main,footer{
     margin-top: 2rem;
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     column-gap: 3rem;
+    row-gap: 3rem;;
+    flex-wrap: wrap;
 
  }
  header .proyecto{
-    background-color:var(--color0);
+    background-color:var(--color3);
     align-items: center;
     text-align: center;
     border-style:solid;
@@ -121,6 +124,7 @@ nav,header,main,footer{
     border-style: solid;
     border-color: var(--color0);
     transform:scale(0.9);
+    transition: 1s;
     }
     #contenedor_copyright{
         margin-top: 6rem;
